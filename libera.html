@@ -1,0 +1,109 @@
+<!doctype html>
+<html>
+<head>
+<script src="script/jquery.min.js"> </script>
+<script type="text/javascript" language="javascript">
+function visualizza(id){
+  if (document.getElementById){
+    if(document.getElementById(id).style.display == 'none'){
+      document.getElementById(id).style.display = 'block';
+    }else{
+      document.getElementById(id).style.display = 'none';
+    }
+  }
+}
+</script>
+
+<meta charset="utf-8">
+<title>FG_imieicolori</title>
+<link href="style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body style="background-color:#541663">
+
+<div id="container_interno">
+	
+	<div class="contenitore_menuinterno">
+	  <ul id="menu_interno">	
+	  <div class="curriculum_menu"><a href="curriculum.html"> curriculum </a> <a href="#" onclick="visualizza('curriculum_sottovoci'); return false"> 
+     <div class="img_menu"> </div></a></div>
+	 
+    <ul id="curriculum_sottovoci" style="background-color:#3e1249">
+        <li class="anagrafica"> <a href="anagrafica.html"> anagrafica   </a> </li>
+		<li class="formazione"> <a href="formazione.html"> formazione </a>  </li>
+		<li class="lavoro"> <a href="lavoro.html"> lavoro </a>  </li>
+		<li class="attitudini"> <a href="attitudini.html"> attitudini </a> </li>	
+    </ul>
+	<li class="foto_menu"> <a href="foto.html"> foto  </a> </li>
+	<li class="libera_menu"> <a href="#"> <span>i miei colori </span> </a> </li>
+	<li class="contatti_menu"> <a href="contatti.html"> contatti </a> </li>
+	</ul>
+	 </div>
+	<div id="contenuti_interno">
+	
+	<a href="home.html"> <div id="titolo_interno"> </div>  </a>
+	
+	<h2> I miei colori </h2> <div class="titolo_libera"> </div>
+	<p> <br> </p>
+	<h3> Colore preferito </h3>
+	<p> Arancione, in tutte le sue sfumature</p>
+	<div class="colore1"></div>
+	<h3> Colore della mia squadra </h3>
+	<p> Rosso, il colore del Milan</p>
+	<div class="colore2"></div>
+	<h3> Colore rivale </h3>
+	<p> Blu, associato all'Intrer, non riesco ad amarlo nonostante mi piaccia</p>
+	<div class="colore3"></div>
+	<h3> Terzo colore preferito </h3>
+	<p> Viola, ha un certo fascino</p>
+	<div class="colore4"></div>
+	<h3> Colore che non mi piace quasi mai </h3>
+	<p> Verde, altro che speranza </p>
+	<div class="colore5"></div>
+	<br><br><br><br><br><br>
+	
+    </div> 
+
+  
+	
+	 
+	</div>
+   <!-- fine div container --> 
+ 
+<div class="footer">
+	<h1>click to open</h1>
+	<h2>click to close </h2>
+	<ul id="footer_menu">
+        <li id="curriculum_footer"> <a href="curriculum.html" > curriculum  </a>    </li>
+		         <ul id="curriculum_sottovoci_footer">
+                    <li class="anagrafica_footer"> <a href="anagrafica.html"> anagrafica   </a> </li>
+		            <li class="formazione_footer"> <a href="formazione.html"> formazione </a>  </li>
+		            <li class="lavoro_footer"> <a href="lavoro.html"> lavoro </a>  </li>
+		            <li class="attitudini_footer"> <a href="attitudini.html"> attitudini </a> </li>	
+    </ul>
+		<li class="foto_footer"> <a href="foto.html"> foto </a>  </li>
+		<li class="libera_footer"> <a href="#"> <span>i miei colori</span> </a>  </li>
+		<li class="contatti_footer"> <a href="contatti.html"> contatti </a> </li>
+	  	
+    </ul>
+	
+	<ul id="footer_contatti">
+	    <li class="icone_footer"> contatti </li>
+        <li class="facebook_footer"> <a href="https://www.facebook.com/francesco.gian.9" target="alt"> </a> facebook </li>
+		<li class="twitter_footer"> <a href="https://twitter.com/fra170528" target="alt"> </a> twitter </li>
+		<li class="pintarest_footer"> <a href="https://it.pinterest.com/franesco1705/" target="alt"> </a> pinterest </li>	            	
+    </ul>
+		
+	<div class="clearfix"></div>
+	</div>
+	
+	<script type="text/javascript">
+$('.footer').on('click', function() {
+    $(this).toggleClass('clicked');
+});
+</script>
+  
+
+
+</body>
+</html>
